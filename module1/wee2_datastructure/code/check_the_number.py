@@ -4,18 +4,14 @@ def check_the_number(n):
     for i in range(1, 5):
         # Thêm i vào list_of_numbers
         list_of_numbers.append(i)
-    
     if n in list_of_numbers:
         result = "True"
     else:
-        result = "False"
-    
+        result = "False"    
     return result
-
 # Kiểm tra hàm với giá trị N = 7
 n = 7
 assert check_the_number(n) == "False"
-
 # Kiểm tra hàm với giá trị N = 2 và in kết quả
 n = 2
 result = check_the_number(n)

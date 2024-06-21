@@ -14,13 +14,11 @@ def my_function(data, max_value, min_value):
         else:
             result.append(i)
     return result
-
 # Dữ liệu đầu vào và giá trị min_value, max_value
 my_list = [5, 2, 5, 0, 1]
 max_value = 1
 min_value = 0
 assert my_function(data=my_list, max_value=max_value, min_value=min_value) == [1, 1, 1, 0, 1]
-
 my_list = [10, 2, 5, 0, 1]
 max_value = 2
 min_value = 1

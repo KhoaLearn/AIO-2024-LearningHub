@@ -12,7 +12,5 @@ def count_word(file_path):
                 else:
                     word_count[word] = 1
     return word_count
-
-
 file_path = '/Users/datarist/AIO-2024-LearningHub/module1/wee2_datastructure/code/p1_data.txt'
 print(count_word(file_path))

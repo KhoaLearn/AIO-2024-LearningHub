@@ -11,11 +11,9 @@ def calculate_f1_score(tp, fp, fn):
     if tp <= 0 or fp <= 0 or fn <= 0:
         print("tp, fp, and fn must be greater than zero")
         return
-    
     precision = tp / (tp + fp)
     recall = tp / (tp + fn)
     f1_score = 2 * (precision * recall) / (precision + recall)
-    
     print(f'Precision is {precision}')
     print(f'Recall is {recall}')
     print(f'F1 Score is {f1_score}')

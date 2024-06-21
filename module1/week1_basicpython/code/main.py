@@ -1,3 +1,4 @@
+import math
 from metrics import calculate_f1_score
 from activation import exercise2
 from loss import calculate_loss
@@ -12,8 +13,9 @@ from mdnre import md_nre_single_sample
 if __name__ == '__main__':
     # Q1
     print('Question 1: ')
-    assert round(calculate_f1_score(tp=2, fp=3, fn=5), 2) == 0.33
-    print(round(calculate_f1_score(tp=2, fp=3, fn=5), 2))
+    f1_score = round(calculate_f1_score(tp=2, fp=3, fn=5), 2)
+    assert math.isclose(f1_score, 0.33, rel_tol=1e-9), f"Expected 0.33, but got {f1_score}"
+    print(f1_score)
     print('-------------------')
     
     # Q2

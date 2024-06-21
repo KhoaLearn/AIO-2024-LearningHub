@@ -1,7 +1,10 @@
 def levenshtein_distance(token1, token2):
+    """
+    Tính khoảng cách Levenshtein giữa hai chuỗi.
+    """
     # Khởi tạo ma trận các số 0
     dp = [[0 for _ in range(len(token2) + 1)] for _ in range(len(token1) + 1)]
-    
+
     # Khởi tạo cột đầu tiên và hàng đầu tiên của ma trận
     for i in range(len(token1) + 1):
         dp[i][0] = i
@@ -24,4 +27,4 @@ def levenshtein_distance(token1, token2):
 
 # Kiểm tra hàm
 assert levenshtein_distance("hi", "hello") == 4
-print(levenshtein_distance("hola", "hello"))
+print(levenshtein_distance("chamhoi", "chammuitieu"))

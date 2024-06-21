@@ -1,4 +1,7 @@
 def character_count(word):
+    """
+    Đếm số lần xuất hiện của từng ký tự trong từ.
+    """
     # Khởi tạo một từ điển để lưu thống kê ký tự
     character_statistic = {}
 

@@ -1,22 +1,22 @@
-def check_the_number(N):
+def check_the_number(n):
     list_of_numbers = []
     result = ""
     for i in range(1, 5):
         # Thêm i vào list_of_numbers
         list_of_numbers.append(i)
     
-    if N in list_of_numbers:
-        results = "True"
+    if n in list_of_numbers:
+        result = "True"
     else:
-        results = "False"
+        result = "False"
     
-    return results
+    return result
 
 # Kiểm tra hàm với giá trị N = 7
-N = 7
-assert check_the_number(N) == "False"
+n = 7
+assert check_the_number(n) == "False"
 
 # Kiểm tra hàm với giá trị N = 2 và in kết quả
-N = 2
-results = check_the_number(N)
-print(results)
+n = 2
+result = check_the_number(n)
+print(result)

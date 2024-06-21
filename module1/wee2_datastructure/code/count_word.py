@@ -1,4 +1,7 @@
 def count_word(file_path):
+    """
+    Đếm số lần xuất hiện của từng từ trong file.
+    """
     word_count = {}
     with open(file_path, 'r') as file:
         for line_file in file:
@@ -12,5 +15,4 @@ def count_word(file_path):
 
 
 file_path = '/Users/datarist/AIO-2024-LearningHub/module1/wee2_datastructure/code/p1_data.txt'
-
 print(count_word(file_path))

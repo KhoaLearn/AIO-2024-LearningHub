@@ -1,4 +1,7 @@
 def max_kernel(num_list, k):
+    """
+    Tìm giá trị lớn nhất trong mỗi khoảng con liên tiếp dài k phần tử của num_list.
+    """
     # Danh sách kết quả để lưu các giá trị lớn nhất
     result = []
 

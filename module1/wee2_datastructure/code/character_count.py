@@ -17,4 +17,4 @@ def character_count(word):
 assert character_count("Baby") == {'B': 1, 'a': 1, 'b': 1, 'y': 1}
 
 # In ra kết quả của hàm character_count
-print(character_count('smiles'))
+print(character_count('Khoadeptrai'))

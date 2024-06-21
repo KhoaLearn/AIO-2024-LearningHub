@@ -2,7 +2,7 @@ def max_kernel(num_list, k):
     # Danh sách kết quả để lưu các giá trị lớn nhất
     result = []
 
-    # Duyệt qua danh sách số với khoảng cách k
+    # Duyệt qua danh sách số với khoảng cách k (Duyệt theo chỉ mục)
     for i in range(len(num_list) - k + 1):
         # Lấy k phần tử liên tiếp từ vị trí i
         window = num_list[i:i + k]
